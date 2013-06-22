@@ -255,7 +255,7 @@ BLIND     // can't see anything
 
 	if(istype(src, /obj/item/clothing/head))			//makes the mob-overlays update
 		usr.update_inv_head(0)
-	if(istype(src, /obj/item/clothing/glasses))
+	else if(istype(src, /obj/item/clothing/glasses))
 		usr.update_inv_glasses(0)
-	if(istype(src, /obj/item/clothing/mask))
+	else if(istype(src, /obj/item/clothing/mask))
 		usr.update_inv_wear_mask(0)
